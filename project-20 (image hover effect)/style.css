@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(56, 55, 55);
+}
+
+
+
+.head{
+   
+}
+
+
+
+.head .image{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.head .image .one{
+    
+}
+
+
+
+.head .image .one .img{
+margin: 0px 25px;
+position: relative;
+overflow: hidden;
+}
+
+
+
+.head .image .one .img img{
+height: 300px;
+width: 300px;
+border-radius: 10px;
+
+z-index: 0;
+display: block;
+}
+
+
+
+.head .image .one .img .layer-top{
+    height: 600px;
+    width: 600px;
+    border: 2px solid white;
+    background-color: black;
+    position: absolute;
+    top: 180px;
+    right: 280px ;
+     z-index: 1; 
+    transform: rotate(225deg);
+    transition: 1s;
+   
+}
+
+.head .image .one .img:hover .layer-top{
+    right: 130px;
+    top: 10px;
+}
+
+
+.head .image .one .img .layer-bottom{
+    height: 600px;
+    width: 600px;
+    border: 2px solid white;
+    background-color: black;
+    position: absolute;
+  bottom: 0;
+    left: 450px;
+     z-index: 1; 
+    transform: rotate(225deg);
+    transition: 1s;
+}
+.head .image .one .img:hover .layer-bottom{
+    bottom: 0;
+    left: 140px;
+}
+
+.head .image .one {
+   position: relative;
+   transition: 1s;
+}
+
+.head .image .one button{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 5;
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+  visibility: hidden;
+  
+}
+.head .image .one:hover button{
+ 
+   visibility: visible;
+   transition-delay: .5s;
+}
+
+.head .image .one button:hover.layer-top{
+    right: 130px;
+    top: 10px;
+}
+.head .image .one button:hover.layer-bottom{
+    bottom: 0;
+    left: 140px;
+    background-color: green;
+}

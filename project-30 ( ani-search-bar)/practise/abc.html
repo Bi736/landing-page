@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./def.css">
+</head>
+<body>
+    
+    
+    
+    <div class="head">
+       
+    <div class="open"><input type="text" onclick="showmenu()"> </div>
+
+    <div id="menu">
+        <ul>
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Sitting</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <i class="far fa-times-circle" Exit onclick="hidemenu()"></i>
+        </ul>
+    </div>
+    
+    </div>
+
+
+
+    <script>
+        let menu = document.getElementById('menu');
+        /*
+        function showmenu() {
+            menu.style.width = '300px';
+        }
+        function hidemenu() {
+            menu.style.width = '0px';
+        }
+        */
+
+        function showmenu() {
+            //menu.classList.add('xyz');
+            menu.style.width = '300px';
+            menu.style.height = '300px';
+            menu.style.marginLeft = '300px';
+        }
+        showmenu();
+        function hidemenu() {
+            //menu.classList.add('mno');
+            menu.style.width = '0px';
+            menu.style.width = '0px';
+            menu.style.marginLeft = '-300px';
+        }
+        hidemenu();
+       
+       
+        
+
+
+
+    </script>
+</body>
+</html>

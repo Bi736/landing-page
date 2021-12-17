@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#menu{
+    margin: 50px 50px;
+    background-color: chartreuse;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 300px;
+ margin-left: 200px;
+
+}
+div#menu ul{
+
+}
+div#menu ul li{
+    list-style: none;
+    margin: 10px;
+}
+div#menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.head {
+   
+}
+i.fas.fa-bars {
+    color: red;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.xyz{
+     margin: 0px;
+}
+.mno{
+    margin-top: -300px;
+    transition: 1s;
+}

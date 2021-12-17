@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgba(0,0,0,.6);
+}
+
+.all-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.part-one{
+    margin: 0px 10px;
+}
+
+.part-one .text{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    height: 250px;
+    width: 400px;
+
+ transform: translateY(-250px);
+ transition: 1s;
+}
+
+.part-one:hover .text{
+    transform: translateY(-100px);
+}
+
+
+
+.part-one .text a{
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    transition: 1s;
+}
+
+.part-one .text a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.part-one .text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 10px 10px;
+    font-weight: 600;
+}
+/*
+.img{
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    background-color: rgba(255,0,87,255);
+    color: white;
+}
+*/
+.part-one .img img{
+    margin-top: 40px;
+}
+.part-one .img .txt h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.part-one .img{
+    background-color:rgba(51,47,52,255);
+    box-shadow: 4px 4px 8px 12px rgba(0,0,0,.3);
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    transition: 1s;
+    z-index: -5;
+    position: relative;
+    z-index: 1;
+}
+
+.part-one .img:hover .text{
+  
+}
+
+.part-one:hover .img{
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    background-color: rgba(255,0,87,255);
+    color: white;
+    transform: translateY(-100px);
+    box-shadow: none;
+}

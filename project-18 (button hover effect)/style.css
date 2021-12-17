@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(73, 73, 73);
+}
+
+.btn a {
+    color:black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    font-size: 22px;
+    padding: 10px 30px;
+    background-color: white;
+    overflow: hidden;
+    display: inline-block;
+}
+.head{
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+
+#main{
+    position: relative;
+    
+}
+
+span#one:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+height: 7px;
+width: 100%;
+background-color:rgba(12,140,167,255);
+display: inline-block;
+}
+
+
+
+
+span#one:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+height: 7px;
+width: 100%;
+background-color:rgba(12,140,167,255)
+;
+display: inline-block;
+}
+
+
+
+/*
+.btn a::before{
+    content: "";
+   border-right: 6px solid green;
+}
+*/
+
+span#one:nth-child(3) {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 100%;
+    width: 7px;
+    background-color:rgba(12,140,167,255)
+    ;
+    transition: 1s;
+}
+
+
+.btn a:hover span#one:nth-child(3){
+top: 0;
+}
+
+
+
+span#one:nth-child(4) {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    height: 100%;
+    width: 7px;
+   background-color:rgba(12,140,167,255)
+   ;
+   transition: 1s;
+}
+
+
+.btn a:hover span#one:nth-child(4){
+bottom: 0px;
+    }
+
+

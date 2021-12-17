@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(151, 79, 228) ;
+   text-align: center;
+}
+
+.head{
+    text-align: center;
+    margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+.note h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 13px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+}
+.head #search .spinner{
+    color: white;
+}
+
+.head #search{
+    background-color:rgb(141, 65, 221) ;
+    width: 500px;
+    height: 80px;
+    display: flex;
+    padding: 10px 25px;
+    border-radius: 10px;
+   
+}
+
+.head #search .one{
+    margin-top: 14px;
+}
+
+.head #search .two{
+    margin-top: 20px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.head #search .two .three{
+  
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.head #search input{
+    border: none;
+    color:transparent ;
+    background-color: transparent;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head #search input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+.head #search #button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.head #search .spinner{
+    font-size: 20px;
+    color: white;
+
+    display: none;
+
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*-------------for java----------------*/
+
+.head #search.loading button{
+    display: none;
+}
+
+
+.head #search.loading .spinner{
+    display: block;
+}
+
+

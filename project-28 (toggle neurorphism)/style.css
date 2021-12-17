@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 237, 218);
+}
+
+.menu{
+
+}
+.menu ul{
+
+}
+.menu ul li{
+    list-style: none;
+    height: 50px;
+    width: 300px;
+    background-color:white;
+    box-shadow: 3px 3px 8px 3px rgba(0,0,0,.2);
+    margin: 15px 0px;
+    border-radius: 6px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.menu ul li:nth-child(1){
+    background: linear-gradient(to right, orange,tomato);
+    text-align: left;
+    padding: 16px;
+    transform:perspective(250px) rotateY(60deg);
+    transition: 1s;
+}
+
+
+.menu ul li:nth-child(2){
+    background: linear-gradient(to left, orange,tomato);
+    text-align: right;
+    padding: 16px;
+    transform:perspective(250px) rotateY(-60deg);
+    transition: 1s;
+}
+
+
+.menu ul li:nth-child(3){
+    background: linear-gradient(to right, orange,tomato);
+    text-align: left;
+    padding: 16px;
+    transform:perspective(250px) rotateY(60deg);
+    transition: 1s;
+}
+
+
+.menu ul li:nth-child(4){
+    background: linear-gradient(to left, orange,tomato);
+    text-align: right;
+    padding: 16px;
+    transform:perspective(250px) rotateY(-60deg);
+    transition: 1s;
+}
+
+.menu ul li:nth-child(1):hover{
+    transform:perspective(200px) rotateY(60deg);
+}
+
+
+.menu ul li:nth-child(2):hover{
+    transform:perspective(200px) rotateY(-60deg);
+}
+
+
+.menu ul li:nth-child(3):hover{
+    transform:perspective(200px) rotateY(60deg);
+}
+
+
+.menu ul li:nth-child(4):hover{
+    transform:perspective(200px) rotateY(-60deg);
+}
