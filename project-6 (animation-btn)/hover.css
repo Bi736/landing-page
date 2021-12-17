@@ -1,0 +1,119 @@
+body{
+    background-color:#031321;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 200px;
+
+}
+
+a{text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#255784;
+    font-size: 20px;
+    padding: 15px 30px;
+    transition: .5s;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+
+a:hover{
+    color: white;
+    background-color: #2196f3;
+    box-shadow:0 0 10px #f321b4,0 0 20px #042541,0 0 40px #21f391 ;
+    transition-delay:1s;
+}
+
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+   background: linear-gradient(90deg,transparent,#21f32c);
+
+}
+
+
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+
+a span:nth-child(2){
+   top: -100%;
+   right: 0%;
+    width: 2px;
+    height: 100%;
+   background: linear-gradient(180deg,transparent,#bb0f51);
+}
+
+
+a:hover span:nth-child(2){
+   top: 100%;
+   transition: 1s;
+   transition-delay: .25s;
+}
+
+
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+   background: linear-gradient(270deg,transparent,#9fc513);
+}
+
+
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.50s;
+}
+
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+   background: linear-gradient(360deg,transparent,#ba0ac0);
+}
+
+
+a:hover span:nth-child(4){
+   bottom: 100%;
+   transition: 1s;
+   transition-delay: 0.75s;
+}
+
+
+/*--------------------next line--------------------*/
+
+.five{
+margin: 0px 80px;
+}
+
+.four a{
+color: rgb(207, 100, 23);
+}
+.five a{
+color: palevioletred;
+}
+.six a{
+color: olivedrab;
+}
