@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0,0,0,.2);
+}
+.head{
+    width: 80%;
+    margin-top: 80px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+.text{
+    margin: 50px 0px;
+}
+
+.label{
+    font-size: 25px;
+    color: rgb(39, 38, 38);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid blueviolet;
+    padding: 20px 0px;
+    transition: .5s;
+    font-weight: 600;
+    position: relative;
+}
+
+.label:hover{
+    color: green;
+}
+
+.label::before{
+    content: "+";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    transition: .5s;
+}
+
+.head .text.active .label::before{
+    content: "-";
+}
+
+
+
+.label::before:hover{
+    color: green;
+}
+
+.head .text .content{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+
+.head .text .content{
+    height: 0px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+    overflow-y: auto;
+}
+
+.head .text.active .content{
+    height: 100px;
+}

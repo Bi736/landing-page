@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+
+
+
+    
+    <!-----------font awasome link----------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css ">
+
+
+
+<!----------google fonts------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!----------css link--------->
+<link rel="stylesheet" href="./style.css">
+
+<!-----------responsive css--------->
+<link rel="stylesheet" href="./responsive.css">
+
+
+
+</head>
+<body>
+    
+
+
+<div class="header">
+    <h1 id="our">Our Pricing</h1>
+
+    <div class="toggle">
+        <label>Annually</label>
+
+        <div class="toggle-btn">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+            </label>
+        </div>
+
+        <label>Monthly</label>
+    </div>
+</div>
+
+
+
+
+    <div class="all-post">
+
+        <div class="card shadow left">
+           
+            <h2>Basic</h2>
+            <ul> 
+               
+                <h1 id="lef"> $49.99 </h1>
+                <li id="c"> 500 GB stroge</li>
+                <li id="e"> 2 users allowed</li>
+                <li id="f"> Send up 3GB</li>
+               <a href="#">Learn more</a>
+            </ul>
+
+        </div>
+
+
+        <div class="card middle active ">
+           
+            <h2>Master</h2>
+            <ul> 
+               
+                <h1 id="middl"> $249.99 </h1>
+                <li id="c"> 1TB GB stroge</li>
+                <li id="e"> 5 users allowed</li>
+                <li id="f"> Send up 10GB</li>
+               <a href="#" id="middle">Learn more</a>
+            </ul>
+
+        </div>
+
+
+        <div class="card shadow right">
+           
+            <h2>Professional</h2>
+            <ul> 
+               
+                <h1 id="righ"> $180.99 </h1>
+                <li id="c"> 700 GB stroge</li>
+                <li id="e"> 5 users allowed</li>
+                <li id="f"> Send up 5GB</li>
+               <a href="#">Learn more</a>
+            </ul>
+
+        </div>
+
+        
+
+<script>
+
+
+
+var checkbox = document.getElementById('checkbox');
+var lef = document.getElementById('lef');
+var middl = document.getElementById('middl');
+var righ = document.getElementById('righ');
+
+
+
+checkbox.addEventListener('click', () => {
+  lef.textContent = lef.textContent === '$199.99' ? '$19.99' : '$199.99';
+  middl.textContent = middl.textContent === '$249.99' ? '$24.99 ' : '$249.99';
+  righ.textContent = righ.textContent === '$399.99' ? '$39.99' : '$399.99';
+});
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

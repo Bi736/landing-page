@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 150px;
+}
+
+.toggle-btn{
+    margin: 0px 15px;
+    height: 25px;
+    width: 60px;
+    background-color: rgb(222, 151, 240);
+    margin: 0px 30px;
+    display: inline-block;
+    border-radius: 20px;
+   
+}
+
+
+.circle{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#round{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px 2px;
+}
+#icon{
+    margin-top: 2px;
+}
+
+
+
+.all-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.shadow{
+    
+    background: white;
+    border: 1px solid black;
+   height: 365px;
+   width: 245px;
+    border-radius: 20px;
+}
+.active{
+background: linear-gradient(to bottom,rgba(255, 0, 0,.8),rgba(0, 0, 102,.9) );
+
+color: white;
+border: 1px solid black;
+border-radius: 20px;
+height: 430px;
+width: 304px;
+
+}
+
+ul{
+
+}
+
+ul  a{
+    padding: 10px 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+ 
+
+.left-next,.middle-next,.right-next{
+    display: none;
+}
+
+#check1:checked ~ .container .all-post .card{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+#check2:checked ~ .container .all-post .middle,
+#check2:checked ~ .container .all-post .left,
+#check2:checked ~ .container .all-post .right{
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+}
+
+
+
+#check2:checked ~ .container .all-post .middle-next,
+#check2:checked ~ .container .all-post .left-next,
+#check2:checked ~ .container .all-post .right-next{
+    display: block;
+}
+
+input{
+    display: none;
+}
+
+
+.layer{
+  
+   
+}
+
+
+
+.layer i{
+   font-size: 80px;
+   color: black;
+   opacity: .04;
+  
+}
+
+
+
+ul li {
+    list-style: none;
+    margin: 20px 40px;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    margin: 0px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+#middle {
+    padding: 7px 35px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.active ul li {
+    list-style: none;
+    margin: 25px 40px;
+    text-align: left;
+color: lightgray;
+}
+
+.active ul li i.far.fa-check-square {
+    margin: 0px 6px;
+    color:rgb(255, 255, 204) ;
+}
+
+.shadow h2{
+    color: black;
+}
+.laye i{
+    font-size: 60px;
+    color: black;
+    opacity: .04;
+
+}
+
+.shadow{
+
+}
+
+.shadow ul li i.far.fa-check-square{
+    margin: 0px 6px;
+    color:green ;
+}
+
+#a{
+   font-weight: 500;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shadow ul  a {
+    padding: 7px 30px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+label{
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+
+.all-post{
+   
+    box-shadow: 20px 20px 30px transparent;
+    padding: 40px 0px;
+}
+
+
+.wave{
+    height: 20px;
+}
+.wave svg{
+    
+   background-size: cover;
+   
+   
+}
+
+#b{
+    font-size: 50px;
+}
+
+#price{
+    font-size: 30px;
+    text-align: left;
+    margin: 20px 30px;
+}

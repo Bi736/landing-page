@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+/*-----under menu------*/
+
+body{
+   
+
+}
+
+
+
+.under-menu{
+
+}
+
+
+
+
+
+/*---------top menu----------*/
+
+.head{
+
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: column;
+}
+.part-one ul{display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.part-one ul li{list-style: none;
+
+}
+
+
+#button{
+    padding: 2px 600px;
+    background-color:rgba(242, 242, 242,.3) ;
+    border-radius: 20px;
+    position: relative;
+    border: 2px solid blue;
+    cursor: text;
+}
+
+
+.star{
+    position: absolute;
+
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.star-one{margin-left: 10px;
+
+}
+.star-two {
+    margin-right: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+
+.star-one img{
+    height: 15px;
+    width: 15px;
+}
+.arrow {
+    font-size: 16px;
+    opacity: 40%;
+    display: flex;
+}
+.arrow-left {
+    margin: 0px 10px;
+}
+i#refresh {
+    font-size: 15px;
+    opacity: 70%;
+}
+p {
+    padding: 2px 7px;
+    background-color:rgba(102, 51, 0,.7) ;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+}
+i#three-dot {
+    font-size: 14px;
+    opacity: 55%;
+}
+
+.part-one {
+    margin-top: 10px;
+}
+span {
+    color: black;
+    font-size: 13px;
+position: relative;
+left: 10px;
+bottom: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*-----part two----*/
+
+.part-two{
+
+}
+.part-two ul{display: flex;
+
+}
+.part-two ul li{margin: 0 14px;
+    list-style: none;
+
+}
+.part-two ul li img{
+    background-color: black;
+    height: 15px;
+    width: 18px;
+}
+
+.part-two {
+
+    margin-top: 15px;
+}
+
+span#app {
+    position: relative;
+    bottom: 4px;
+    font-size: 11px;
+}
+
+
+
+/*------under menu-------*/
+
+.under-menu{
+    
+}
+
+
+.menu-three{
+
+}
+.menu-three ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-three ul li{
+    margin: 20px 15px;
+    list-style: none;
+    color: black;
+}
+
+li#b {padding: 2px 7px;
+    background-color:rgb(167, 86, 4) ;
+    border-radius: 90%;
+    color: white;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+
+}
+a {
+    color:black;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+/*------middle------*/
+
+.middle {
+    position: absolute;
+    top:150px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+    color:brown;
+    font-family: 'Kanit', sans-serif;
+}
+
+a#search-btn {
+    background-color:rgba(242, 242, 242,.9) ;
+    padding: 20px 280px;
+    background-color: ;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: text;
+}
+
+i#icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.icon-one {
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin: 0 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+i#in {
+    margin-left: 15px;
+
+}
+i#icn {
+    margin-right: 15px;
+}
+
+.of{
+    flex-basis: 80%;
+    display: inherit;
+    margin-left: 15px;
+}
+.off{
+    flex-basis: 20%;
+}
+
+i.fas.fa-search {
+    display: inherit;
+}
+h4 {
+    margin-left: 15px;
+    font-family: 'Kanit', sans-serif;
+    opacity: 60%;
+    margin-top: -2px;
+}
+img#bar {
+    height: 20px;
+    color: black;
+    background-color: white;
+}
+
+
+
+/*------next---------*/
+
+.line-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps {
+    margin: 0 40px;
+}
+.line-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+i#face {
+    padding: 12px 16px;
+    color: blue;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+}
+i#mes { padding: 12px 16px;
+    color: rgb(230, 101, 59);
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+
+}
+i#twi { padding: 12px 16px;
+    color: blue;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+
+}
+i#what { padding: 12px 16px;
+    color: green;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+
+}
+i#tik { padding: 12px 16px;
+    color:black;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+
+}
+i#youtube { padding: 12px 14px;
+    color: red;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 22px;
+
+}
+i#plus { padding: 12px 16px;
+    color: black;
+    border-radius: 50%;
+    background-color:rgba(242, 242, 242,.9) ;
+    font-size: 15px;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+h3{
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.app {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    top: 350px;
+}
+
+
+/*------footer--------*/
+
+.footer{
+    position: absolute;
+    top: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+}
+i.fas.fa-pen {
+    display: block;
+    text-align: right;
+    color: black;
+    margin: 0 20px;
+}
+i.fas.fa-paperclip {
+    color:black;
+    margin: 0 15px;
+}
+
+
+
+
+
+/*----carrection------*/
+
+.logo img{
+    height: 120px;
+    width: 350px;
+}
+

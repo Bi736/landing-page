@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text onclick</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1>Frequently Asked Questions</h1>
+
+
+<div class="main">
+    <div class="head">
+   
+
+        <div class="text active">
+            <div class="label">Why is the moon sometimes out during the day?</div>
+            <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In sed ad saepe quaerat enim deserunt quisquam officiis amet impedit. Iusto dolorem rem numquam impedit obcaecati nam nisi consectetur et! Voluptates!
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="text active">
+            <div class="label">Why is the sky blue</div>
+            <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quia minus est eum minima aliquam natus! Eius id inventore illum, quidem tempora facere ullam perferendis dolores consectetur distinctio voluptatibus ipsa.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="text active">
+            <div class="label">Will we discover aliens</div>
+            <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloremque vitae eaque consequuntur recusandae officiis quas laborum laboriosam, natus dolorem vel repellat ducimus minus adipisci earum culpa ab facilis at?
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="text active">
+            <div class="label">How much does the Earth weigh?</div>
+            <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid assumenda eius corporis obcaecati eveniet illum, temporibus eligendi magni sed, recusandae ad sunt delectus tempore dolor non? Cupiditate fugiat suscipit odit?
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="text active">
+            <div class="label">How do airplanes stay up?</div>
+            <div class="content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eaque ex nobis ea expedita ipsum nesciunt, explicabo consequatur impedit, et beatae? Nulla, exercitationem quasi autem enim error veniam et nobis?
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+<script>
+/*
+function btn1(){
+    document.getElementById("abc").classList.toggle("xyz");
+}
+function btn2(){
+    document.getElementById("def").classList.toggle("xyz");
+}
+function btn3(){
+    document.getElementById("ijk").classList.toggle("xyz");
+}
+function btn4(){
+    document.getElementById("lmn").classList.toggle("xyz");
+}
+function btn5(){
+    document.getElementById("opq").classList.toggle("xyz");
+}
+*/
+
+
+const accordion = document.getElementsByClassName("text");
+
+
+for (i = 0; i<accordion.length; i++){
+    accordion[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+    })
+}
+if(accordion =="false"){
+    
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

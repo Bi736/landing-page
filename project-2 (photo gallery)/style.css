@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.top-content{
+    margin-top: 50px;
+    display: flex;
+    background-color: rgb(189, 186, 186);
+    padding: 10px;
+}
+
+label{
+    margin: 0px 40px;
+    border:1px solid black;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+label:hover{
+    transform: scale(1.06);
+}
+
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.pic img{
+    height: 330px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 20px 20px;
+}
+
+
+
+#check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 1s;
+}
+
+
+#check2:checked ~ .container .photo-gallery .shirt{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 1s;
+}
+
+#check2:checked ~ .container .photo-gallery .t-shirt,
+#check2:checked ~ .container .photo-gallery .pant,
+#check2:checked ~ .container .photo-gallery .blazer{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+
+#check3:checked ~ .container .photo-gallery .t-shirt{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 1s;
+}
+
+#check3:checked ~ .container .photo-gallery .shirt,
+#check3:checked ~ .container .photo-gallery .pant,
+#check3:checked ~ .container .photo-gallery .blazer{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+
+#check4:checked ~ .container .photo-gallery .pant{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 1s;
+}
+
+#check4:checked ~ .container .photo-gallery .shirt,
+#check4:checked ~ .container .photo-gallery .t-shirt,
+#check4:checked ~ .container .photo-gallery .blazer{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+#check5:checked ~ .container .photo-gallery .blazer{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 1s;
+}
+
+#check5:checked ~ .container .photo-gallery .shirt,
+#check5:checked ~ .container .photo-gallery .t-shirt,
+#check5:checked ~ .container .photo-gallery .pant{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+
+input{
+    display: none;
+}
+
+

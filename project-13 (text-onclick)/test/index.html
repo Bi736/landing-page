@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text onclick</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!------------css link-------------->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+ 
+    <div class="head">
+
+
+        <div class="text">
+
+            <div class="label" onclick="btn1()">List one</div>
+            <div class="content">
+                <p id="abc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.</p>
+            </div>
+
+        </div>
+
+
+
+
+        
+        <div class="text">
+
+            <div class="label" onclick="btn2()">List one</div>
+            <div class="content">
+                <p id="def"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.</p>
+            </div>
+
+        </div>
+
+
+
+
+        
+        <div class="text">
+
+            <div class="label" onclick="btn3()">List one</div>
+            <div class="content">
+                <p id="xyz"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi quasi illo corrupti obcaecati veritatis, odio eius sed accusantium. Nulla repudiandae autem laudantium officiis facere soluta repellendus rem optio magni.</p>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+<script>
+
+function btn1(){
+    document.getElementById("abc").style.display = "block"
+}
+
+
+/*
+function btn2(){
+    document.getElementById("def").style.display = "block"
+}
+*/
+
+function btn2(){
+    document.getElementById("def").classList.toggle('mn');
+}
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

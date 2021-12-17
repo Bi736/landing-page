@@ -1,0 +1,114 @@
+
+
+.head{
+    height: 400px;
+    width: 500px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image{
+
+}
+.head img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent ;
+    transition: 1s;
+}
+
+.overlay::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+   height: 100px;
+   width: 100%;
+   background-color: rgba(0,0,0,.6);
+   transition: 1s;
+}
+.overlay::after{
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    transition: 1s;
+}
+
+.head:hover .overlay::before{
+    top: 0px;
+
+}
+.head:hover .overlay::after{
+bottom: 0px;
+}
+.head:hover .overlay{
+    background-color: rgba(0,0,0,.3);
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color:transparent ;
+    transition: 1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.layer h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    transition: 1s;
+}
+span{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: 1s;
+    display: none;
+}
+
+.head:hover .layer h2{
+display: block;
+
+}
+
+.head:hover span{
+display: block;
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 152, 240);
+}
+
+.head{
+    max-width: 800px;
+}
+.head .text{
+    position: relative;
+    margin: 10px 20px;
+}
+.head .text .label{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.head .text .label::before{
+    content: "+";
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 30px;
+    color: green;
+    font-weight: 800;
+}
+
+
+
+.head .text .content{
+    position: relative;
+    background-color: greenyellow;
+    font-size: 20px;
+    transition: .5s;
+}
+
+#abc{
+    display: none;
+}
+
+
+#def{
+    
+}
+
+#xyz{
+    
+}
+
+.mn{
+    display: none;
+}
